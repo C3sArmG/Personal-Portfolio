@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7bd4179a28.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>SUU Freshman</p>
+            <h1>Hi, I'm <span>Cesar</span><br> Morales from Peru</h1>
+        </div>
+    </div>
+</div>
+<!-------------------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row"> 
+            <div class="about-col-1">
+                <img src="images/f8a98b43-3e0d-4a3c-ac23-51c421e4add0.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="Subtitle">About Me</h1>
+                <p class="mysummary"> My name is Cesar Alfredo Morales García, I'm 18 years old. I was born in Lima,Perú. My favorite hobbies are playing soccer and videogames with my friends.
+                    Also, my favorite fast-food are pizza and hamburger. One of my dreams is to study in USA, I am confident if I been perseverance and responsable
+                    all my dreams can be possible.  </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Designer</span><br>Designig Website Interfaces</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Building apps with Python</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>NOT yet</span><br>Designig Website Interfaces</li>
+                        <li><span>NOT yet</span><br>Web App Development</li>
+                        <li><span>NOT yet</span><br>Building apps with Python</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="Education">
+                    <ul>
+                        <li><span>None</span><br>I'm studying in SUU yet.</li>
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>2022-2023</span><br>I'm studied in an University from Perú</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-------------------------SERVICES----------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="Subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type</p>
+                <!----<a href="#">learn more</a>----->
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type</p>
+                <!----<a href="#">learn more</a>----->
+            </div>
+            <div>
+                <i class="fa-solid fa-notdef"></i>
+                <h2>NOT YET</h2>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type</p>
+                <!----<a href="#">learn more</a>----->
+            </div>
+        </div> 
+    </div>
+</div>
+
+<!-------------------------PORTFOLIO----------------------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="Subtitle">My Pictures</h1>  
+        <div class="work-list">
+            <div class="work">
+                <img src="images/37309c83-61c0-4681-b405-5cd9da03fca7.jpg">
+            </div>
+            <div class="work">
+                <img src="images/WhatsApp Image 2023-09-06 at 11.02.40 PM.jpeg">
+            </div>
+            <div class="work">
+                <img src="images/WhatsApp Image 2023-09-06 at 11.02.23 PM.jpeg">
+            </div>
+        </div>
+        <!-----------<a href="#" download class="btn"> See more</a>---------->
+        <div class="work-list">
+            <div class="work">
+                <img src="images/IMG_0139.jpeg">
+            </div>
+            <div class="work">
+                <img src="images/WhatsApp Image 2023-09-07 at 9.18.27 AM.jpeg">
+            </div>
+            <div class="work">
+                <img src="images/WhatsApp Image 2023-09-07 at 9.18.39 AM.jpeg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------------CONTACT----------------------------->
+<!-------------------------Chequear el google sheets----------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="Subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> +51 955 555 555</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/cesaralfredo.moralesg"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/cesarmg_22/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" class="btn btn2"> Download CV</a>        <!--- way to download a pdf --->
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Cesar.Made with <i class="fa-solid fa-heart-crack"></i> by Easy Tutorials in English</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyeSTKOR_x3COEeLbLFkde5YzMm1SAP9G8vWK5yviMfFp3Hbmgc5yyhRLHdLp73_19tAA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML= ""    
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
